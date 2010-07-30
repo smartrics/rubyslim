@@ -1,4 +1,4 @@
-require 'jcode'
+require File.expand_path(File.dirname(__FILE__) + '/ruby_19_fix.rb')
 module ListDeserializer
   class SyntaxError < Exception
 

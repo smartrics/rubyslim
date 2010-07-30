@@ -8,9 +8,11 @@ Put these command in a parent of the Ruby test pages.
 !define TEST_SYSTEM {slim}
 !define TEST_RUNNER {<wherever you put Ruby Slim>/lib/run_ruby_slim.rb}
 !define COMMAND_PATTERN {ruby -I %p %m}
-!define PATH_SEPARATOR {-I}
+!define PATH_SEPARATOR { -I}
 !path <wherever you put Ruby Slim>/lib
 !path <any directory where you have ruby fixtures>
+
+NOTE - on ruby 1.9, COMMAND_PATTERN should be {ruby -Ku -I %p %m}
 
 You should put the following in an appropriate SetUp page:
 
