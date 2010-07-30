@@ -1,0 +1,8 @@
+Note for ruby 1.9 users
+-----------------------
+
+currently some specs fail on ruby 1.9 as the default encoding of strings is not UTF-8 as expected by the specs.
+
+specs can be successfully run by manually run
+
+ruby -Ku <spec-file.rb>
